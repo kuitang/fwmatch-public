@@ -13,7 +13,7 @@ function [data,variable_names] = get_real_data(varargin)
         error('Usage : get_real_data(number_of_samples) or get_real_data()');
     end
         
-    data = data_clean(order,1:10);
+    data = data_clean(order,:);
 
     clear data_clean
 

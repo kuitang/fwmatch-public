@@ -1,0 +1,5 @@
+*.pyc
+pmtkTools/systemInfo/*.m
+*.mexmaci64
+*.mexa64
+thirdparty/QPBO-v1.32.src/example

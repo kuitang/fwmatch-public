@@ -1,0 +1,7 @@
+1. Download libDAI here https://staff.fnwi.uva.nl/j.m.mooij/libDAI/ and follow
+   its directions to compile. You should compile with MATLAB enabled.
+
+2. After a successful compile, you should see a directory called matlab/. Copy
+   its contents to the matlab/ directory in this folder. Alternatively, replace
+   this whole directory with a symlink.
+

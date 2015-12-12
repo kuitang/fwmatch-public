@@ -1,0 +1,5 @@
+You need to compile libDAI and copy its output MEX files here.
+You can also copy the *.m files, which are purely documentation.
+
+See the top-level README for directions.
+

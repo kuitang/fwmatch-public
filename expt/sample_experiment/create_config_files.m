@@ -7,13 +7,17 @@ function create_config_files(varargin)
     system('mkdir -p job_logs');
     system('mkdir -p results');
     system('mkdir -p yeti_logs');
+    
+    % get the name of the current experiment
+    current_experiment_path = pwd;
+    [~, experiment_name, ~] = fileparts(current_experiment_path);
 
     parser = inputParser;
     
     parser.addParamValue('training_test_split', .8, @isscalar); 
     parser.addParamValue('BCFW_max_iterations', 75000, @isscalar); 
     parser.addParamValue('structure_type', 'loopy', @ischar); 
-    parser.addParamValue('experiment_name', 'loopy_model_collection_hidden_model', @ischar); 
+    parser.addParamValue('experiment_name', experiment_name, @ischar); 
     parser.addParamValue('email_for_notifications', '1live.life.queen.size1@gmail.com', @ischar); 
     parser.addParamValue('yeti_user', 'darpa', @ischar); 
     parser.addParamValue('compute_true_logZ', true, @islogical); 
